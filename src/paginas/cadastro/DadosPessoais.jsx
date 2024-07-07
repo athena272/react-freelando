@@ -80,7 +80,7 @@ const DadosPessoais = () => {
                 return errors;
             }}
         >
-            {formik => {
+            {formik => (
                 <Form onSubmit={formik.handleSubmit}>
                     <div style={{ textAlign: 'center' }}>
                         <Tipografia variante="h1" componente="h1">
@@ -104,9 +104,6 @@ const DadosPessoais = () => {
                             <ListaSupensa
                                 titulo="Estado"
                                 opcoes={estadosBrasileiros}
-                                valor={formik.values.estado}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
                             />
                         </Col>
                         <Col lg={8} md={8} sm={8}>
@@ -168,7 +165,7 @@ const DadosPessoais = () => {
                         </Col>
                     </Row>
                 </Form>
-            }}
+            )}
         </Formik>
     );
 };
