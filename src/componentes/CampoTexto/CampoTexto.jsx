@@ -34,11 +34,11 @@ export const CampoTexto = ({ titulo, ...props }) => {
             {...props}
         />
         <ErrorMessage name={props.name}>
-            {messages => {
+            {messages => (
                 <div style={{ color: 'red', marginTop: '4px' }}>
                     {messages}
                 </div>
-            }}
+            )}
         </ErrorMessage>
     </LabelEstilizada>)
 }
