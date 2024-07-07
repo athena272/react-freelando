@@ -1,1 +1,2 @@
 pnpm install formik --save
+pnpm i yup
