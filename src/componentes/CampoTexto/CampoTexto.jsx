@@ -26,12 +26,13 @@ const InputEstilizado = styled.input`
     line-height: 17px;
 `
 
-export const CampoTexto = ({ titulo, valor, onChange, tipo = 'text' }) => {
+export const CampoTexto = ({ titulo, valor, onChange, onBlur, tipo = 'text' }) => {
     return (<LabelEstilizada>
         {titulo}
         <InputEstilizado
             value={valor}
             onChange={evento => onChange(evento.target.value)}
+            onBlur={evento => onBlur(evento.target.value)}
             type={tipo}
         />
     </LabelEstilizada>)
