@@ -40,7 +40,6 @@ const BotaoEstilizado = styled.button`
 
 export const ListaSupensa = ({ titulo, opcoes }) => {
     const { values, setFieldValue } = useFormikContext()
-    console.log("🚀 ~ ListaSupensa ~ values:", values)
     const [estaAberta, alternarVisibilidade] = useState(false)
     const [opcaoFocada, setOpcaoFocada] = useState(null);
 
